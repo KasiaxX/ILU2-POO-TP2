@@ -1,5 +1,6 @@
 package frontiere;
 
+import controleur.ControlEmmenager;
 import controleur.ControlLibererEtal;
 
 public class BoundaryLibererEtal {
@@ -11,6 +12,7 @@ public class BoundaryLibererEtal {
 
 	public void libererEtal(String nomVendeur) {
 		//TODO a completer
+		controlEmmenager.isVendeur
 	}
 
 }
