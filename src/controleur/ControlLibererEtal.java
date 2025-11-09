@@ -13,10 +13,7 @@ public class ControlLibererEtal {
 	//TODO a completer
 	public boolean isVendeur(String nomVendeur) {
 		Etal etal = controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur);   
-		if(etal != null) {
-			return true;
-		}
-		return false;
+		return etal != null;
 	}
 	
 	
@@ -33,6 +30,12 @@ public class ControlLibererEtal {
 	public String[] libererEtal(String nomVendeur) {
 		//TODO a completer
 		String[] donneesEtal = null;
+		Etal etalVendeur = controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur);
+		
+		if(etalVendeur!=null) {	
+			donneesEtal = etalVendeur.etatEtal();
+			etalVendeur.libererEtal();
+		}
 		return donneesEtal;
 	}
 
