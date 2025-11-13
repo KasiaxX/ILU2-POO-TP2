@@ -114,7 +114,8 @@ public class Village {
 	}
 
 	////////////////////// Classe Interne ///////////////////////
-	private static class Marche {
+	//private marche pas
+	public static class Marche {
 		private Etal[] etals;
 
 		private Marche(int nbEtals) {
